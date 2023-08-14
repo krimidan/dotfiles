@@ -21,7 +21,7 @@ antigen bundle alias-finder
 
 # Load bundles from external repos
 antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-syntax-highlighting
+# antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-completions
 
 # Load the theme
@@ -37,7 +37,10 @@ antigen apply
 
 # Aliases
 alias l='ls -l'
+alias la='ls -A'
 alias ll='ls -lah'
+alias ls='ls --color=auto'
+
 alias allspark='192.168.0.100'
 alias proxmox='192.168.0.125'
 alias allsparkvps='209.182.238.76'
