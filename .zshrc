@@ -42,7 +42,7 @@ alias ll='ls -lah'
 alias ls='ls --color=auto'
 
 alias allspark='ssh autobot@192.168.0.100'
-alias proxmox='ssh daniel@192.168.0.125'
+alias proxmox='ssh autobot@192.168.0.125'
 alias all8='ssh autobot@199.241.137.130'
 alias all32='ssh autobot@209.182.238.76'
 alias all64='ssh autobot@89.233.108.176'
