@@ -29,16 +29,10 @@ brew cleanup
 
 # Define an array of packages to install using Homebrew.
 packages=(
-    "python"
-    "tcl-tk"
-    "python-tk"
     "bash"
     "zsh"
     "git"
-    "tree"
-    "pylint"
-    "black"
-    "node"
+    "gh"
 )
 
 # Loop over the array to install each application.
@@ -98,15 +92,9 @@ $(brew --prefix)/bin/npm install --global prettier
 
 # Define an array of applications to install using Homebrew Cask.
 apps=(
-    "google-chrome"
-    "firefox"
     "brave-browser"
-    "sublime-text"
     "visual-studio-code"
-    "spotify"
     "discord"
-    "google-drive"
-    "gimp"
     "vlc"
     "rectangle"
     "postman"
@@ -162,7 +150,7 @@ brew upgrade
 brew upgrade --cask
 brew cleanup
 
-echo "Sign in to Google Chrome. Press enter to continue..."
+echo "Sign in to Brave Browser. Press enter to continue..."
 read
 
 echo "Connect Google Account (System Settings -> Internet Accounts). Press enter to continue..."
@@ -179,3 +167,4 @@ read
 
 echo "Import your Rectangle settings located in ~/dotfiles/settings/RectangleConfig.json. Press enter to continue..."
 read
+

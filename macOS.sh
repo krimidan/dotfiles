@@ -8,6 +8,13 @@ read
 
 # Set scroll as traditional instead of natural
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+defaults write NSGlobalDomain com.apple.trackpad.click-to-float -bool true
+defaults write NSGlobalDomain com.apple.trackpad.tapToClick -bool true
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+
+# das hier hat geklappt
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+
 killall Finder
 
 # Set location for screenshots

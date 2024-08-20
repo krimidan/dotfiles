@@ -11,7 +11,7 @@
       "float" : 0
     },
     "alternateDefaultShortcuts" : {
-      "bool" : true
+      "bool" : false
     },
     "altThirdCycle" : {
       "int" : 0
@@ -46,11 +46,14 @@
     "curtainChangeSize" : {
       "int" : 0
     },
+    "cycleSizesIsChanged" : {
+      "bool" : false
+    },
     "disabledApps" : {
 
     },
     "doubleClickTitleBar" : {
-      "int" : 0
+      "int" : 3
     },
     "doubleClickTitleBarIgnoredApps" : {
 
@@ -65,7 +68,7 @@
       "int" : 1
     },
     "footprintAlpha" : {
-      "float" : 0.30000001192092896
+      "float" : 0.3
     },
     "footprintAnimationDurationMultiplier" : {
       "float" : 0.75
@@ -85,8 +88,11 @@
     "gapSize" : {
       "float" : 0
     },
+    "hapticFeedbackOnSnap" : {
+      "int" : 1
+    },
     "hideMenubarIcon" : {
-      "bool" : true
+      "bool" : false
     },
     "ignoreDragSnapToo" : {
       "int" : 0
@@ -151,6 +157,12 @@
     "screenEdgeGapTop" : {
       "float" : 0
     },
+    "screenEdgeGapTopNotch" : {
+      "float" : 0
+    },
+    "selectedCycleSizes" : {
+      "int" : 0
+    },
     "shortEdgeSnapAreaSize" : {
       "float" : 145
     },
@@ -191,7 +203,7 @@
       "int" : 0
     },
     "SUEnableAutomaticChecks" : {
-      "bool" : false
+      "bool" : true
     },
     "systemWideMouseDown" : {
       "int" : 0
@@ -200,10 +212,10 @@
 
     },
     "todo" : {
-      "int" : 2
+      "int" : 1
     },
     "todoApplication" : {
-
+      "string" : "com.apple.mail"
     },
     "todoMode" : {
       "bool" : false
@@ -227,7 +239,15 @@
   "shortcuts" : {
     "bottomHalf" : {
       "keyCode" : 125,
-      "modifierFlags" : 1179648
+      "modifierFlags" : 786432
+    },
+    "bottomLeft" : {
+      "keyCode" : 38,
+      "modifierFlags" : 786432
+    },
+    "bottomRight" : {
+      "keyCode" : 40,
+      "modifierFlags" : 786432
     },
     "center" : {
       "keyCode" : 8,
@@ -237,8 +257,16 @@
       "keyCode" : 3,
       "modifierFlags" : 786432
     },
+    "firstFourth" : {
+      "keyCode" : 18,
+      "modifierFlags" : 786432
+    },
     "firstThird" : {
       "keyCode" : 2,
+      "modifierFlags" : 786432
+    },
+    "firstThreeFourths" : {
+      "keyCode" : 43,
       "modifierFlags" : 786432
     },
     "firstTwoThirds" : {
@@ -246,11 +274,19 @@
       "modifierFlags" : 786432
     },
     "larger" : {
-      "keyCode" : 24,
-      "modifierFlags" : 1179648
+      "keyCode" : 30,
+      "modifierFlags" : 786432
+    },
+    "lastFourth" : {
+      "keyCode" : 21,
+      "modifierFlags" : 786432
     },
     "lastThird" : {
       "keyCode" : 5,
+      "modifierFlags" : 786432
+    },
+    "lastThreeFourths" : {
+      "keyCode" : 47,
       "modifierFlags" : 786432
     },
     "lastTwoThirds" : {
@@ -259,15 +295,11 @@
     },
     "leftHalf" : {
       "keyCode" : 123,
-      "modifierFlags" : 1048576
+      "modifierFlags" : 786432
     },
     "maximize" : {
-      "keyCode" : 126,
-      "modifierFlags" : 1048576
-    },
-    "maximizeHeight" : {
-      "keyCode" : 126,
-      "modifierFlags" : 917504
+      "keyCode" : 36,
+      "modifierFlags" : 786432
     },
     "nextDisplay" : {
       "keyCode" : 124,
@@ -281,17 +313,21 @@
       "keyCode" : 45,
       "modifierFlags" : 786432
     },
-    "restore" : {
-      "keyCode" : 51,
-      "modifierFlags" : 1179648
-    },
     "rightHalf" : {
       "keyCode" : 124,
-      "modifierFlags" : 1048576
+      "modifierFlags" : 786432
+    },
+    "secondFourth" : {
+      "keyCode" : 19,
+      "modifierFlags" : 786432
     },
     "smaller" : {
-      "keyCode" : 27,
-      "modifierFlags" : 1179648
+      "keyCode" : 44,
+      "modifierFlags" : 786432
+    },
+    "thirdFourth" : {
+      "keyCode" : 20,
+      "modifierFlags" : 786432
     },
     "toggleTodo" : {
       "keyCode" : 11,
@@ -299,8 +335,16 @@
     },
     "topHalf" : {
       "keyCode" : 126,
-      "modifierFlags" : 1179648
+      "modifierFlags" : 786432
+    },
+    "topLeft" : {
+      "keyCode" : 32,
+      "modifierFlags" : 786432
+    },
+    "topRight" : {
+      "keyCode" : 34,
+      "modifierFlags" : 786432
     }
   },
-  "version" : "82"
+  "version" : "88"
 }
