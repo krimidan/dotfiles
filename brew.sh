@@ -116,12 +116,11 @@ done
 brew tap | grep -q "^homebrew/cask-fonts$" || brew tap homebrew/cask-fonts
 
 fonts=(
-    "font-source-code-pro"
+    "font-sauce-code-pro-nerd-font"
     "font-lato"
     "font-montserrat"
     "font-nunito"
     "font-open-sans"
-    "font-oswald"
     "font-poppins"
     "font-raleway"
     "font-roboto"
@@ -140,7 +139,7 @@ done
 # Once fonts are installed, import your Terminal Profile
 echo "Import your terminal settings..."
 echo "Terminal -> Settings -> Profiles -> Import..."
-echo "Import from ${HOME}/dotfiles/settings/Pro.terminal"
+echo "Import from ${HOME}/dotfiles/settings/iterm2-profile.json"
 echo "Press enter to continue..."
 read
 
@@ -156,15 +155,9 @@ read
 echo "Connect Google Account (System Settings -> Internet Accounts). Press enter to continue..."
 read
 
-echo "Sign in to Spotify. Press enter to continue..."
-read
-
 echo "Sign in to Discord. Press enter to continue..."
 read
 
-echo "Open Rectangle and give it necessary permissions. Press enter to continue..."
-read
-
-echo "Import your Rectangle settings located in ~/dotfiles/settings/RectangleConfig.json. Press enter to continue..."
+echo "Import your Rectangle settings located in ~/dotfiles/settings/RectangleConfig.json and give Rectangle the necessary permissions. Press enter to continue..."
 read
 

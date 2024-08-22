@@ -86,7 +86,7 @@
 
     },
     "gapSize" : {
-      "float" : 0
+      "float" : 8
     },
     "hapticFeedbackOnSnap" : {
       "int" : 1
@@ -301,6 +301,10 @@
       "keyCode" : 36,
       "modifierFlags" : 786432
     },
+    "maximizeHeight" : {
+      "keyCode" : 126,
+      "modifierFlags" : 917504
+    },
     "nextDisplay" : {
       "keyCode" : 124,
       "modifierFlags" : 1835008
@@ -311,6 +315,10 @@
     },
     "reflowTodo" : {
       "keyCode" : 45,
+      "modifierFlags" : 786432
+    },
+    "restore" : {
+      "keyCode" : 51,
       "modifierFlags" : 786432
     },
     "rightHalf" : {
