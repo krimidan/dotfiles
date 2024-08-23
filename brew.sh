@@ -85,20 +85,33 @@ else
 fi
 
 # Create the tutorial virtual environment I use frequently
-$(brew --prefix)/bin/python3 -m venv "${HOME}/tutorial"
+# $(brew --prefix)/bin/python3 -m venv "${HOME}/tutorial"
 
 # Install Prettier, which I use in both VS Code and Sublime Text
-$(brew --prefix)/bin/npm install --global prettier
+# $(brew --prefix)/bin/npm install --global prettier
 
 # Define an array of applications to install using Homebrew Cask.
 apps=(
     "brave-browser"
     "visual-studio-code"
     "discord"
+    "signal"
+    "mattermost"
+    "onlyoffice"
+    "nextcloud"
     "vlc"
-    "rectangle"
+    "kodi"
     "postman"
+    "anydesk"
+    "logi-options-plus"
+    "ledger-live"
+    "tradingview"
+    "displaylink"
+    "rectangle"
     "keyboardcleantool"
+    "microsoft-remote-desktop"
+    "mas"
+    "zoom"
 )
 
 # Loop over the array to install each application.
@@ -112,8 +125,8 @@ for app in "${apps[@]}"; do
 done
 
 # Install fonts
-# Tap the Homebrew font cask repository if not already tapped
-brew tap | grep -q "^homebrew/cask-fonts$" || brew tap homebrew/cask-fonts
+# Tap the Homebrew font cask repository if not already tapped ## deprecated!
+# brew tap | grep -q "^homebrew/cask-fonts$" || brew tap homebrew/cask-fonts
 
 fonts=(
     "font-sauce-code-pro-nerd-font"
@@ -137,8 +150,9 @@ for font in "${fonts[@]}"; do
 done
 
 # Once fonts are installed, import your Terminal Profile
-echo "Import your terminal settings..."
-echo "Terminal -> Settings -> Profiles -> Import..."
+echo "Import your terminal settings and profile"
+echo "Settings -> General -> Settings -> Import All Settings and Data"
+echo "Settings -> Profiles -> Import JSON Profiles"
 echo "Import from ${HOME}/dotfiles/settings/iterm2-profile.json"
 echo "Press enter to continue..."
 read
@@ -149,15 +163,15 @@ brew upgrade
 brew upgrade --cask
 brew cleanup
 
-echo "Sign in to Brave Browser. Press enter to continue..."
+echo "Import your Rectangle settings located in ~/dotfiles/settings/RectangleConfig.json and give Rectangle the necessary permissions. Press enter to continue..."
+read
+
+echo "Brave Browser: Setup all your profiles, sync the settings and check the extensions. Press enter to continue..."
 read
 
 echo "Connect Google Account (System Settings -> Internet Accounts). Press enter to continue..."
 read
 
 echo "Sign in to Discord. Press enter to continue..."
-read
-
-echo "Import your Rectangle settings located in ~/dotfiles/settings/RectangleConfig.json and give Rectangle the necessary permissions. Press enter to continue..."
 read
 
