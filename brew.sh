@@ -33,6 +33,9 @@ packages=(
     "zsh"
     "git"
     "gh"
+    "mas"
+    "ssh-copy-id"
+    "iproute2mac"
 )
 
 # Loop over the array to install each application.
@@ -92,10 +95,13 @@ fi
 
 # Define an array of applications to install using Homebrew Cask.
 apps=(
+    "affinity-designer"
+    "affinity-photo"
     "brave-browser"
     "visual-studio-code"
     "discord"
     "signal"
+    "telegram"
     "mattermost"
     "onlyoffice"
     "nextcloud"
@@ -103,14 +109,13 @@ apps=(
     "kodi"
     "postman"
     "anydesk"
-    "logi-options-plus"
+    "logi-options+"
     "ledger-live"
     "tradingview"
     "displaylink"
     "rectangle"
     "keyboardcleantool"
     "microsoft-remote-desktop"
-    "mas"
     "zoom"
 )
 
@@ -130,13 +135,13 @@ done
 
 fonts=(
     "font-sauce-code-pro-nerd-font"
-    "font-lato"
-    "font-montserrat"
-    "font-nunito"
-    "font-open-sans"
-    "font-poppins"
-    "font-raleway"
-    "font-roboto"
+    # "font-lato"
+    # "font-montserrat"
+    # "font-nunito"
+    # "font-open-sans"
+    # "font-poppins"
+    # "font-raleway"
+    # "font-roboto"
 )
 
 for font in "${fonts[@]}"; do
@@ -149,29 +154,8 @@ for font in "${fonts[@]}"; do
     fi
 done
 
-# Once fonts are installed, import your Terminal Profile
-echo "Import your terminal settings and profile"
-echo "Settings -> General -> Settings -> Import All Settings and Data"
-echo "Settings -> Profiles -> Import JSON Profiles"
-echo "Import from ${HOME}/dotfiles/settings/iterm2-profile.json"
-echo "Press enter to continue..."
-read
-
 # Update and clean up again for safe measure
 brew update
 brew upgrade
 brew upgrade --cask
 brew cleanup
-
-echo "Import your Rectangle settings located in ~/dotfiles/settings/RectangleConfig.json and give Rectangle the necessary permissions. Press enter to continue..."
-read
-
-echo "Brave Browser: Setup all your profiles, sync the settings and check the extensions. Press enter to continue..."
-read
-
-echo "Connect Google Account (System Settings -> Internet Accounts). Press enter to continue..."
-read
-
-echo "Sign in to Discord. Press enter to continue..."
-read
-
