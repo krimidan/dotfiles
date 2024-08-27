@@ -22,6 +22,10 @@ for file in "${files[@]}"; do
     ln -sf "${dotfiledir}/.${file}" "${HOME}/.${file}"
 done
 
+sudo scutil --set ComputerName "MoonBook-19"
+sudo scutil --set HostName "MoonBook-19"
+sudo scutil --set LocalHostName "MoonBook-19"
+
 # Run the MacOS Script
 ./macos.sh
 
@@ -53,6 +57,7 @@ read
 echo "Affinity Designer: Copy your Affinity Designer studio preset to the following location:"
 echo "~/Library/Application Support/Affinity Designer 2/presets"
 echo "Press enter to continue.."
+read
 
 echo "Google Account: Connect Google Account (System Settings > Internet Accounts)."
 echo "Press enter to continue..."

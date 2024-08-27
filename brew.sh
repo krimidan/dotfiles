@@ -98,6 +98,7 @@ apps=(
     "affinity-designer"
     "affinity-photo"
     "brave-browser"
+    "iterm2"
     "visual-studio-code"
     "discord"
     "signal"
