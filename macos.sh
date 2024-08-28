@@ -110,4 +110,5 @@ end tell
 EOF
 
 killall Finder
+killall Dock
 killall SystemUIServer
