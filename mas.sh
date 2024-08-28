@@ -7,7 +7,7 @@ mas install 975890633
 mas install 6469021132
 
 # NexTv
-# mas install 1628393213
+mas install 1628393213
 
 # Update and upgrade the freshly installed Apps
 mas upgrade
