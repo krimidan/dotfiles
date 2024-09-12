@@ -1,5 +1,8 @@
 # Shortcuts
 alias home="cd ~/"
+alias multi="cd /Volumes/multiversum"
+alias uni="cd /Volumes/home/universum"
+alias time="cd /Volumes/Time-Capsule"
 
 # Detect which `ls` flavor is in use
 if ls --color >/dev/null 2>&1; then # GNU `ls`

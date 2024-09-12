@@ -100,6 +100,7 @@ apps=(
     "brave-browser"
     "clickup"
     "iterm2"
+    "hiddenbar"
     "visual-studio-code"
     "discord"
     "signal"
@@ -111,6 +112,7 @@ apps=(
     "kodi"
     "postman"
     "anydesk"
+    "raycast"
     "logi-options+"
     "ledger-live"
     "tradingview"
@@ -118,6 +120,9 @@ apps=(
     "rectangle"
     "keyboardcleantool"
     "microsoft-remote-desktop"
+    "wezterm"
+    "starship"
+    "stats"
     "zoom"
 )
 
