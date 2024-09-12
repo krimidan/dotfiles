@@ -6,25 +6,21 @@
 # And also sets up VS Code
 ############################
 
-# dotfiles directory
+# Defining the dotfiles directory
 dotfiledir="${HOME}/dotfiles"
 
-# list of files/folders to symlink in ${homedir}
-files=(zshrc zprofile zprompt bashrc bash_profile bash_prompt aliases private)
+# List of files to symlink in ${homedir}
+files=(zshrc aliases private)
 
-# change to the dotfiles directory
+# Change to the dotfiles directory
 echo "Changing to the ${dotfiledir} directory"
 cd "${dotfiledir}" || exit
 
-# create symlinks (will overwrite old dotfiles)
+# Create symlinks (will overwrite old dotfiles)
 for file in "${files[@]}"; do
     echo "Creating symlink to $file in home directory."
     ln -sf "${dotfiledir}/.${file}" "${HOME}/.${file}"
 done
-
-sudo scutil --set ComputerName "MoonBook-19"
-sudo scutil --set HostName "MoonBook-19"
-sudo scutil --set LocalHostName "MoonBook-19"
 
 # Run the MacOS Script
 ./macos.sh

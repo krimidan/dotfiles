@@ -98,6 +98,7 @@ apps=(
     "affinity-designer"
     "affinity-photo"
     "brave-browser"
+    "clickup"
     "iterm2"
     "visual-studio-code"
     "discord"

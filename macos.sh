@@ -45,6 +45,11 @@ defaults write com.apple.finder _FXSortFoldersFirst -bool true
 # When performing a search, search the current folder by default
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
+# Default sorting
+# defaults write com.apple.finder ArrangeBy -string "name"
+defaults write com.apple.finder SortBy -string "name"
+defaults write com.apple.finder UseAsDefault -bool true
+
 # Disable the warning when changing a file extension
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
