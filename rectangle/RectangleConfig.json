@@ -86,7 +86,7 @@
 
     },
     "gapSize" : {
-      "float" : 8
+      "float" : 0
     },
     "hapticFeedbackOnSnap" : {
       "int" : 1
@@ -125,7 +125,7 @@
       "int" : 0
     },
     "moveCursorAcrossDisplays" : {
-      "int" : 0
+      "int" : 1
     },
     "notifiedOfProblemApps" : {
       "bool" : false
@@ -237,6 +237,10 @@
     }
   },
   "shortcuts" : {
+    "almostMaximize" : {
+      "keyCode" : 36,
+      "modifierFlags" : 1835008
+    },
     "bottomHalf" : {
       "keyCode" : 125,
       "modifierFlags" : 786432
@@ -354,5 +358,5 @@
       "modifierFlags" : 786432
     }
   },
-  "version" : "88"
+  "version" : "89"
 }
