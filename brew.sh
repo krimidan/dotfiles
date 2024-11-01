@@ -119,7 +119,7 @@ apps=(
     "displaylink"
     "rectangle"
     "keyboardcleantool"
-    "microsoft-remote-desktop"
+    "windows-app"
     "wezterm"
     "starship"
     "stats"
