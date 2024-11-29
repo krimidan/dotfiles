@@ -36,6 +36,9 @@ packages=(
     "mas"
     "ssh-copy-id"
     "iproute2mac"
+    "starship"
+    "zsh-syntax-highlighting"
+    "zsh-autosuggestions"
 )
 
 # Loop over the array to install each application.
@@ -121,7 +124,6 @@ apps=(
     "keyboardcleantool"
     "windows-app"
     "wezterm"
-    "starship"
     "stats"
     "zoom"
 )
